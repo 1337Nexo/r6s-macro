@@ -50,6 +50,7 @@ bool main( )
 
 	while (!GetAsyncKeyState( VK_END ))
 	{
+		// 32767 == 0x8001 (held down, pressed)
 		if (GetAsyncKeyState( VK_LBUTTON ) & ~32767)
 		{
 			switch (choice)
